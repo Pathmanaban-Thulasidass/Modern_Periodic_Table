@@ -1,0 +1,564 @@
+body{
+    width: 100%;
+    background-image: url("https://img.freepik.com/free-photo/abstract-surface-textures-white-concrete-stone-wall_74190-8189.jpg?size=626&ext=jpg&ga=GA1.1.1819386255.1697715570&semt=ais");
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
+    background-size : cover;
+}
+table{
+    border-spacing: 4px;
+}
+th{
+    width: 55px;
+    height: 55px;
+    border-radius: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+th:hover{
+    cursor: pointer;
+}
+.atomic_num{
+    position: relative;
+    bottom: 2px;
+    right: 20px;
+    font-size: 12px;
+    padding-left: 5px;
+}
+#element{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+.element_name{
+    font-size: 11px;
+}
+td{
+    width: 55px;
+    height: 55px;
+}
+.third_box{
+    margin-top: 20px;
+}
+.reactive_nonmetal{
+    background-color:#e6f0ff;
+    color: #0060f0;
+}
+.alkali_metal{
+    background-color: #daf7fe;
+    color: #00758c;
+}
+.alkaline_earth_metal{
+    background-color: #ffebeb;
+    color: #d70528;
+}
+.transition_metal{
+    background-color: #F5ECFD;
+    color: #6232ec;
+}
+.post-transition_metal{
+    background-color: #dcfaeb;
+    color: #002c00;
+}
+.metalloid{
+    background-color: #fef9e6;
+    color: #945700;
+}
+.noble_gas{
+    background-color: #ffebee;
+    color: #d43c73;
+}
+.lanthanide{
+    background-color: #e6f5ff;
+    color: #174666;
+
+}
+.actinide{
+    background-color: #ffeadb;
+    color: #cb4011;
+}
+.unknown_chemical_properties{
+    background-color: #e9e9ec;
+    color: #3f374f;
+}
+.reactive_nonmetal:hover{
+    box-shadow: 0px 3px 8px #0060f0;  
+}
+.alkali_metal:hover{
+    box-shadow: #00758c  0px 3px 8px;
+}
+.alkaline_earth_metal:hover{
+    box-shadow: 0px 3px 8px #d70528;
+}
+.transition_metal:hover{
+    box-shadow: 0px 3px 8px #6232ec;
+}
+.post-transition_metal:hover{
+    box-shadow: 0px 3px 8px #002c00;
+}
+.metalloid:hover{
+    box-shadow: 0px 3px 8px #945700;
+}
+.noble_gas:hover{
+    box-shadow: 0px 3px 8px #d43c73 ;
+}
+.lanthanide:hover{
+    box-shadow: 0px 3px 8px #174666;
+}
+.actinide:hover{
+    box-shadow: 0px 3px 8px #cb4011;
+}
+.unknown_chemical_properties:hover{
+    box-shadow: 0px 3px 8px #3f374f;
+}
+.items{
+    width: 100vw;
+    height: 50px;
+    background-color: transparent;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+/* For alkali metal Botton  */
+.alkaliBtn{
+    display: flex;
+    width: 120px;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    background-color: transparent;
+}
+.alkaliBtn:hover{
+    background-color: rgb(230, 227, 227);
+    text-decoration: underline;
+    cursor: pointer;
+}
+.alkaliBtn > div{
+    margin: 3px;
+    margin-top: 5px;
+}
+.alkaliRoundColor{
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    background-color: #daf7fe;
+    border:2px solid #00758c;
+}
+
+/* For alkali Earth metal Botton  */
+.alkaliEarthBtn{
+    display: flex;
+    width: 150px;
+    border-radius: 15px;
+    border: none;
+    height: 30px;
+    background-color: transparent;
+}
+.alkaliEarthBtn:hover{
+    background-color: rgb(230, 227, 227);
+    text-decoration: underline;
+    cursor: pointer;
+}
+.alkaliEarthBtn > div{
+    margin: 3px;
+    margin-top: 5px;
+}
+.alkaliEarthRoundColor{
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    background-color: #ffebeb;
+    border:2px solid #d70528;
+}
+
+/* For Transition metal Botton  */
+.transitionBtn{
+    display: flex;
+    width: 140px;
+    border-radius: 15px;
+    border: none;
+    height: 30px;
+    background-color: transparent;
+}
+.transitionBtn:hover{
+    background-color: rgb(230, 227, 227);
+    text-decoration: underline;
+    cursor: pointer;
+}
+.transitionBtn > div{
+    margin: 3px;
+    margin-top: 5px;
+}
+.transitionRoundColor{
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    background-color:#F5ECFD;
+    border:2px solid #6232ec;
+}
+
+/* For Post - Transition metal Botton  */
+.postTransitionBtn{
+    display: flex;
+    width: 170px;
+    border-radius: 15px;
+    border: none;
+    height: 30px;
+    background-color: transparent;
+}
+.postTransitionBtn:hover{
+    background-color: rgb(230, 227, 227);
+    text-decoration: underline;
+    cursor: pointer;
+}
+.postTransitionBtn > div{
+    margin: 3px;
+    margin-top: 5px;
+}
+.postTransitionRoundColor{
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    background-color:#dcfaeb;
+    border:2px solid #002c00;
+}
+
+/* For Mettaloid Botton  */
+.metaloidBtn{
+    display: flex;
+    border-radius: 15px;
+    border: none;
+    height: 30px;
+    background-color: transparent;
+}
+.metaloidBtn:hover{
+    background-color: rgb(230, 227, 227);
+    text-decoration: underline;
+    cursor: pointer;
+}
+.metaloidBtn > div{
+    margin: 3px;
+    margin-top: 5px;
+}
+.metaloidRoundColor{
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    background-color:#fef9e6;
+    border:2px solid #945700;
+}
+
+
+/* For Reactive Nonmetal Botton  */
+.reactive_nonmetalbtn{
+    display: flex;
+    width: 160px;
+    border-radius: 15px;
+    border: none;
+    height: 30px;
+    background-color: transparent;
+}
+.reactive_nonmetalbtn:hover{
+    background-color: rgb(230, 227, 227);
+    text-decoration: underline;
+    cursor: pointer;
+}
+.reactive_nonmetalbtn > div{
+    margin: 3px;
+    margin-top: 5px;
+}
+.reactive_nonmetalRoundColor{
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    background-color:#e6f0ff;
+    border:2px solid #0060f0;
+}
+
+/* For Nobel Gas Botton  */
+.nobelGasBtn{
+    display: flex;
+    width: 105px;
+    border-radius: 15px;
+    border: none;
+    height: 30px;
+    background-color: transparent;
+}
+.nobelGasBtn:hover{
+    background-color: rgb(230, 227, 227);
+    text-decoration: underline;
+    cursor: pointer;
+}
+.nobelGasBtn > div{
+    margin: 3px;
+    margin-top: 5px;
+}
+.nobelGasRoundColor{
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    background-color:#ffebee;
+    border:2px solid #d43c73;
+}
+
+
+/* For Lathanide Botton  */
+.lathanideBtn{
+    display: flex;
+    width: 105px;
+    border-radius: 15px;
+    border: none;
+    height: 30px;
+    background-color: transparent;
+}
+.lathanideBtn:hover{
+    background-color: rgb(230, 227, 227);
+    text-decoration: underline;
+    cursor: pointer;
+}
+.lathanideBtn > div{
+    margin: 3px;
+    margin-top: 5px;
+}
+.lathanideRoundColor{
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    background-color:#e6f5ff;
+    border:2px solid #174666;
+}
+
+
+/* For Actinide Botton  */
+.actinideBtn{
+    display: flex;
+    width: 90px;
+    border-radius: 15px;
+    border: none;
+    height: 30px;
+    background-color: transparent;
+}
+.actinideBtn:hover{
+    background-color: rgb(230, 227, 227);
+    text-decoration: underline;
+    cursor: pointer;
+}
+.actinideBtn > div{
+    margin: 3px;
+    margin-top: 5px;
+}
+.actinideRoundColor{
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    background-color:#ffeadb;
+    border:2px solid #cb4011;
+}
+
+/* For Unknown Chemical Properties Botton  */
+.ucpBtn{
+    display: flex;
+    width: 220px;
+    border-radius: 15px;
+    border: none;
+    height: 30px;
+    background-color: transparent;
+}
+.ucpBtn:hover{
+    background-color: rgb(230, 227, 227);
+    text-decoration: underline;
+    cursor: pointer;
+}
+.ucpBtn > div{
+    margin: 3px;
+    margin-top: 5px;
+}
+.ucpRoundColor{
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    background-color:#e9e9ec;
+    border:2px solid #3f374f;
+}
+
+
+#card{
+    display: none;
+}
+.card{
+    margin-top: 50px;
+    width: 70vw;
+    height: 80vh;
+    border-radius: 30px 5px 30px 30px;
+    display: flex;
+    position: absolute;
+    left: clamp(100px,20vw,240px);
+    z-index: 5;
+}
+#cardClose{
+    color: white;
+    position: relative;
+    top: 10px;
+    right: 20px;
+}
+#cardElementName{
+    font-size: 35px;
+}
+#cardElementSymbol{
+    font-size: 35px;
+}
+#cardAtmNoTop{
+    font-size: 25px;
+    position: relative;
+    bottom: 7px;
+    
+}
+#cardElement{
+    width:23vw;
+    height: 79.5vh;
+    color: white;
+    background-color: #0060f0;
+    padding-left: 30px;
+    border-radius: 0px 5px 30px 0px;
+    outline: 3px solid #0060f0;
+}
+
+#cardDescribition{
+    width: 47vw;
+    height: 70vh;
+    background-color: #e6f0ff;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 25px;
+    padding: 37px;
+    border-radius: 30px 0px 0px 30px;
+    outline: 3px solid #0060f0;
+
+}
+#cardElementTop{
+    padding-top: 30px;
+    font-weight: bold;
+}
+#cardAtnNo{
+    font-size: 20px;
+}
+#cardClose:hover{
+    cursor: pointer;
+}
+.cardBtn{
+    display: flex;
+    border-radius: 15px;
+    border: none;
+    height: 30px;
+    background-color: transparent;
+}
+.cardBtn > div{
+    margin: 3px;
+    margin-top: 5px;
+}
+#cardRoundColor{
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    background-color:#e9e9ec;
+    position: relative;
+    top: 2px;
+}
+#cardElementType{
+    font-size: 18px;
+    color: white;
+}
+#cardSmalldes{
+    font-size: 22px;
+    padding: 15px;
+    line-height: 30px;
+}
+#CardHr{
+    width: 70%;
+    height: 1px;
+    background-color: whitesmoke;
+    border: 1px solid whitesmoke;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+#cardGif{
+    position: relative;
+    left: 18px ;
+}
+
+.displayCard{
+    display:flex;
+    position: absolute;
+    animation-name: box;
+    animation-duration: 1s;
+    animation-timing-function:cubic-bezier(0.23, 1, 0.320, 1);
+    top: 50px;
+
+}
+
+@keyframes box {
+    0% {
+        top: 700px;
+    }
+    80%{
+        top: 25px;
+    }
+   90%{
+        top: 75px;
+   }
+   100%{
+        top: 50px;
+   }
+}
+
+.card12{
+    position: absolute;
+    animation-name: boxRemove;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+    display: none;
+}
+
+@keyframes boxRemove {
+    0%{
+        top: 50px;
+    }
+    10%{
+        top: 75px;
+    }
+    20%{
+        top: 25px;
+    }
+    100%{
+        top: 700px;
+        display: none;
+    }
+    
+}
+
+#header{
+    width: 80vw;
+    height: 80px;
+    background-color: lightgray;
+    margin-bottom: 50px;
+    border-radius: 15px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#title{
+    font-size: 35px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#pathu{
+    position: relative;
+    top: 10px;
+    font-size: 20px;
+    right: -210px;
+}
